@@ -6,5 +6,5 @@ void setup(){
 void loop(){
   int reading = analogRead(A0); // returns a value between 0-16383
   Serial.println(reading);
-  delay(100);
+  delayMicroseconds(1000000);
 }
