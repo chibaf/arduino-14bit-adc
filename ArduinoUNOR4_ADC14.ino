@@ -1,10 +1,10 @@
 void setup(){
   analogReadResolution(14); //change to 14-bit resolution
-  Serial.begin(9600);
+  Serial.begin(2000000);
 }
 
 void loop(){
   int reading = analogRead(A0); // returns a value between 0-16383
   Serial.println(reading);
-  delayMicroseconds(1000000); // sleep 1,000,000 microseconds
+  delayMicroseconds(10); // sleep 1,000,000 microseconds
 }
